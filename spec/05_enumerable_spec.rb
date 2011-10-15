@@ -62,10 +62,10 @@ describe "Enumerable" do
 
         formatted_list = students.map do |student| 
           student.upcase
-          puts student.upcase
+    #      puts student.upcase
         end
         
-        formatted_list.should eq %w[ DAVID SAURABH SAGE THOMAS DANIEL CATHERINE JOEL ]
+        formatted_list.should == %w[ DAVID SAURABH SAGE THOMAS DANIEL CATHERINE JOEL ]
 
       end
       
